@@ -9,6 +9,6 @@ To decide whether an item is worth putting into the knapsack we use the followin
 if j < weights[i]:
   Table[i, j] = table[i-1, j] #Cannot fit the ith item
 else:
-  Table[i, j] = max(table[i-1, j], values[i] + table[i-1, j – values[i],]) #Dont use the ith item / Use the ith item
+  Table[i, j] = max(table[i-1, j], values[i] + table[i-1, j – weights[i],]) #Dont use the ith item / Use the ith item
 ```
 To make life easier, we create table[n+1, c+1] and fill the first row and column with zeros, since both the knapsack with size equal to 0 and a list of items containing no items will make the result 0.
