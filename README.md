@@ -1,6 +1,6 @@
 Python Clearcode intern summer 2019 task
 
-This task is a classic example of a knapsack problem, thus to complete it, I decided to use dynamic programming instead of the brute force method. I considered using a genetic algorithm, but judging by the way the solutions are going to be judged, finding the optimal solution is the priority, as oposed to finding a good solution in a set amout of time (like with using GA).
+This task is a classic example of the knapsack problem, thus to complete it, I decided to use dynamic programming instead of the brute force method. I considered using a genetic algorithm, but judging by the way the solutions are going to be judged, finding the optimal solution is the priority, as oposed to finding a good solution in a set amout of time (like with using GA).
 
 The dynamic programing approach to this problem involves the creation of a table[n, c], where n is the number of memes(items) and c is the capacity of the usb stick(knapsack). For 0 ≤ i ≤ n and 0 ≤ j ≤ c, table[i,j] will contain the value of the most valuable items from the subset of the first i items that can fit into the knapsack with the capacity of j.
 
