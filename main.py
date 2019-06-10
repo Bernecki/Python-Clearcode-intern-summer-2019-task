@@ -35,7 +35,7 @@ def find_items_in_best_solution(usb_size_mib, names, sizes, prices, quantity, pr
     return selected_memes
 
 
-class TestResults(unittest.TestCase):
+class TestCalculateMethod(unittest.TestCase):
 
     def test_basic_testcase(self):
         usb_size = 1
